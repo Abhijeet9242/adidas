@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodcut men</title>
+    <link rel="stylesheet" href="Cart.css">
+    <link rel = "icon" href = 
+    "https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg" 
+        type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      
+</head>
+<body>
+    <div id="topheader">
+        <div id="topcontent">
+           <div>FREE RETURNS</div>
+            <div>SIGN UP & GET 15% OFF</div>
+        </div>
+       
+  </div>
+
+  <div id="header">
+    <div id="logodiv">
+        <img class="adidasLogo" src="https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg">
+    </div>
+   
+    <div id="headeritem">
+        <p>MEN</p>
+        <p>WOMEN</p>
+        <p>KIDS</p>
+        <p>SPORTS</p>
+        <p>BRAND</p>
+        <p>COLLECTIONS</p>
+        <p>OUTLET</p>
+    </div>
+    <div id="rightSideBox">
+        <a href="#"><button>sign up</button></a>
+        <a href="#"><button>log in</button></a>
+        <p>
+            <a href="Cart.html"><i class="material-icons">shopping_bag</i></a>
+        </p>
+    </div>
+    </div>
+
+   
+   
+    <div id="mainBody">
+
+        <div id="productSide">
+
+        
+            <div id="bagDetails">
+
+                <strong id="yourBag"> YOUR BAG </strong>
+                <p id="totalPrice">
+
+                </p>
+
+            </div>
+
+            <div id="display">
+
+            </div>
+
+
+
+            <br>
+            <div id=" features">
+                <span id="mouseOver"> <i class="fas fa-truck"></i> &nbsp; <u onclick="freeDelivery()">Free
+                        delivery</u></span> <br><br>
+                <span id="mouseOver"> <i class="fas fa-exchange-alt"></i> &nbsp;<u onclick="returns()">30* day free
+                        returns</u></span>
+                <br><br>
+                <span id="mouseOver"> <i class="fas fa-lock"></i> &nbsp;<u onclick="safeSecure()">Safe & Secure payment
+                        options</u></span>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div id="checkoutSide">
+            <div id="checkOut" style="width: 90%" onclick="checkOut()">
+                <div id="mouseOver_chekout">CHECKOUT</div>
+                <div>→</div>
+            </div>
+
+            <div class="orderSummery">
+                <strong id="orderSummery"> ORDER SUMMARY </strong>
+
+                <table id="table">
+
+
+                    <tr id="tableRow">
+                        <td id="totalItem">Total item</td>
+                        <td id="totalPrice1">₹0.00</td>
+                    </tr>
+                    <tr id="tableRow">
+                        <td>Delivery</td>
+                        <td id="delivery"> Your Bag is EMPTY! </td>
+                    </tr>
+                    <tr id="tableRow">
+                        <td> <strong>Total</strong> <br>(Inclusive of all taxes) </td>
+                        <td id="totalPrice2">₹0.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <form onsubmit="promo(event)" id="promocodeForm">
+
+                <input type="text" id="promoCodebtn" placeholder="Enter Your Promocode Here" required />
+                <button type="submit" id="applyBtn">Apply</button>
+
+            </form>
+
+
+            <div id="needHelp">
+                <p> <strong> Need Help?</strong></p>
+
+                <span id="mouseOver"><u onclick="deliveryonRight()">Delivery</u></span> <br><br>
+                <span id="mouseOver"><u onclick="returnonRight()">Return & Refund</u></span> <br><br>
+                <span id="mouseOver"><u onclick="orderonRight()">Ordering & Payment</u></span><br><br>
+                <span id="mouseOver"><u onclick="promotiononRight()">Promotion & Voucher</u></span>
+
+                <p id="paymentCardImg"> <img
+                        src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/visa-master-rupay-cd_tcm209-732258.png"
+                        alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footersection">
+        <div id="footerdivitem">
+            <div>
+                <h3 class="h3">PRODUCTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SPORTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COLLECTIONS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SUPPORT</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COMPANY INFO</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="footerabout">
+        <div id="footeritem">
+            <p>Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions &nbsp; &nbsp; | &nbsp; &nbsp; Cookies</p>
+        </div>
+        <p class="footerlogo">© 2021 adidas India Marketing Pvt Ltd</p>
+    </div>
+
+
+
+    
+   
+    
+   
+</body>
+</html>
+
+<script src="Cart.js"></script>

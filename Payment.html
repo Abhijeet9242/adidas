@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodcut men</title>
+    <link rel="stylesheet" href="Payment.css">
+    <link rel = "icon" href = 
+    "https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg" 
+        type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+  
+
+      
+</head>
+<body>
+    <div id="topheader">
+        <div id="topcontent">
+           <div>FREE RETURNS</div>
+            <div>SIGN UP & GET 15% OFF</div>
+        </div>
+       
+  </div>
+
+  <div id="header">
+    <div id="logodiv">
+        <img class="adidasLogo" src="https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg">
+    </div>
+   
+    <div id="headeritem">
+        <p>MEN</p>
+        <p>WOMEN</p>
+        <p>KIDS</p>
+        <p>SPORTS</p>
+        <p>BRAND</p>
+        <p>COLLECTIONS</p>
+        <p>OUTLET</p>
+    </div>
+    <div id="rightSideBox">
+        <a href="#"><button>sign up</button></a>
+        <a href="#"><button>log in</button></a>
+        <p>
+            <a href="#"><i class="material-icons">shopping_bag</i></a>
+        </p>
+    </div>
+    </div>
+
+    <div id="container">
+
+        <div id="leftBox">
+            <div id="paymentHeading">PAYMENT METHOD</div>
+            <div class="subHead">All transactions are safe and secure</div>
+            <hr>
+
+            <div id="cardDetails">
+
+                <div id="creditOptionBox">
+                    <input onchange="showCredit()" type="radio" id="cardBtn" class="creditcardBtn" name="payment" value="creditCard" checked>
+                    <label for="creditCard" class="creditCardOption">Credit/Debit Card</label>
+                    <div id="showCCOption">
+                        <input type="text" id="cardNumber" placeholder="Card Number">
+                        <input type="text" id="cardName" placeholder="Name On Card">
+                        <input type="text" id="cardDate" placeholder="MM / YY">
+                        <input type="number" id="cvv" placeholder="CVV">
+                    </div>
+                </div>
+
+                <div class="codOptionBox">
+                    <input onchange="selectCod()" type="radio" id="codBtn" name="payment" value="cod">
+                    <label for="cod" class="creditCardOption">Cash on Delivery</label>
+                    <button id="submitBtn" onclick="payment()">PLACE ORDER</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="rightBox">
+
+            <div id="orderSummary">
+                <div class="orderHeading">ORDER SUMMARY</div>
+
+                <table id="orderSummeryTable">
+                    <tr>
+                        <td id="item" class="orderSumStyle"></td>
+                        <td id="totalPrice1" class="orderSumStyle"></td>
+                    </tr>
+                    <tr>
+                        <td class="orderSumStyle">DELIVERY</td>
+                        <td id="delivery" class="orderSumStyle"></td>
+                    </tr>
+                    <tr>
+                        <td class="orderSumStyle"> <strong>TOTAL</strong><br>(Inclusive of all taxes)</td>
+                        <td id="totalPrice2"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="orderDetails">
+                <div class="orderHeading, orderHeadingDetails">ORDER DETAILS</div>
+                <div id="display"></div>
+                <div id="displayShippingDetails"></div>
+                <div class="extraDetails">
+                    <h3>DELIVERY OPTION</h3>
+                    <div class="deliveryConstants">
+                        <p>Standard Delivery</p>
+                        <p>within 3-9 Business Days</p>
+                        <p>FREE</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="footersection">
+        <div id="footerdivitem">
+            <div>
+                <h3 class="h3">PRODUCTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SPORTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COLLECTIONS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SUPPORT</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COMPANY INFO</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="footerabout">
+        <div id="footeritem">
+            <p>Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions &nbsp; &nbsp; | &nbsp; &nbsp; Cookies</p>
+        </div>
+        <p class="footerlogo">© 2021 adidas India Marketing Pvt Ltd</p>
+    </div>
+        
+  
+    
+   
+</body>
+</html>
+
+<script src="Payment.css"></script>

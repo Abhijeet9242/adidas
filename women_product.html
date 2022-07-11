@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodcut men</title>
+    <link rel="stylesheet" href="women_product.css">
+    <link rel = "icon" href = 
+    "https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg" 
+        type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      
+</head>
+<body>
+    <div id="topheader">
+        <div id="topcontent">
+           <div>FREE RETURNS</div>
+            <div>SIGN UP & GET 15% OFF</div>
+        </div>
+       
+  </div>
+
+  <div id="header">
+    <div id="logodiv">
+        <img class="adidasLogo" src="https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg">
+    </div>
+   
+    <div id="headeritem">
+        <p>MEN</p>
+        <p>WOMEN</p>
+        <p>KIDS</p>
+        <p>SPORTS</p>
+        <p>BRAND</p>
+        <p>COLLECTIONS</p>
+        <p>OUTLET</p>
+    </div>
+    <div id="rightSideBox">
+        <a href="#"><button>sign up</button></a>
+        <a href="#"><button>log in</button></a>
+        <p>
+            <a href="#"><i class="material-icons">shopping_bag</i></a>
+        </p>
+    </div>
+    </div>
+
+    <div id="productmaindiv">
+        <div class="backhome">
+            <p><a href="index.html">Back</a></p>
+            <p><a href="index.html">Home</a></p>
+        </div>
+
+        <h1 id="productHeading">WOMEN PRODUCTS<span id="totalProductsCount"></span></h1>
+
+
+        <div class="buttonsDiv">
+
+            <select name="division" id="divisionFilter" onclick="showDivision()" class="filterButtons">
+                <option value="default"> DIVISION</option>
+                <option value="clothing">CLOTHING</option>
+                <option value="shoes">SHOES</option>
+                <option value="accessories">ACCESSORIES</option>
+            </select>
+
+            <select name="productType" id="productType" onclick="showProductType()" class="filterButtons">
+                <option value="default"> PRODUCT TYPE</option>
+                <option value="sneakers">SNEAKERS</option>
+                <option value="football">FOOTBALL</option>
+                <option value="sportsShoes">SPORTS SHOES</option>
+                <option value="Tshirts">T-SHIRTS</option>
+                <option value="sportsWear">SPORTS WEAR</option>
+            </select>
+
+            <select name="brand" id="brand" onclick="showBrand()" class="filterButtons">
+                <option value="default">BRAND</option>
+                <option value="performance">PERFORMANCE</option>
+                <option value="originals">ORIGINALS</option>
+                <option value="sportsInspired">SPORTS INSPIRED</option>
+                <option value="sportsWear">SPORTS WEAR</option>
+            </select>
+
+            <select name="collection" id="collection" onclick="showCollection()" class="filterButtons">
+                <option value="default">COLLECTION</option>
+                <option value="clima">CLIMA</option>
+                <option value="adicolor">ADICOLOR</option>
+                <option value="ultraBoost">ULTRA BOOST</option>
+                <option value="superNova">SUPER NOVA</option>
+            </select>
+
+            <select name="sustainability" id="sustainability" onclick="showSustainability()" class="filterButtons">
+                <option value="default">SUSTAINABILITY</option>
+                <option value="sustainable">SUSTAINABLE</option>
+                <option value="vegan">VEGAN</option>
+                <option value="organicCotton">ORGANIC COTTON</option>
+                <option value="colorWithCare">COLOR WITH CARE</option>
+            </select>
+
+            <select name="price" id="priceFilter" onclick="priceSortFilter()" class="filterButtons">
+                <option value="default">PRICE</option>
+                <option value="low" class="filterButtons">(Low - High)</option>
+                <option value="high" class="filterButtons">(High - Low)</option>
+            </select>
+
+
+            <button onclick="clearFilter()" class="filterButtons">CLEAR FILTER</button>
+        </div>
+        <div id = "parent" class="adjustment"></div>
+    </div>
+
+    
+
+    </div>
+
+    <div id="footersection">
+        <div id="footerdivitem">
+            <div>
+                <h3 class="h3">PRODUCTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SPORTS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COLLECTIONS</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">SUPPORT</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+            <div>
+                <h3 class="h3">COMPANY INFO</h3>
+                <p>Footwear</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+                <p>Outlet – Sale</p>
+                <p>New Arrivals</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="footerabout">
+        <div id="footeritem">
+            <p>Privacy Policy &nbsp; &nbsp; | &nbsp; &nbsp; Terms and Conditions &nbsp; &nbsp; | &nbsp; &nbsp; Cookies</p>
+        </div>
+        <p class="footerlogo">© 2021 adidas India Marketing Pvt Ltd</p>
+    </div>
+    
+   
+</body>
+</html>
+
+<script src="women_data.js"></script>
